@@ -1,0 +1,2 @@
+# SwiftKeyboardHandlingExample
+iOSアプリでキーボードが表示されたときの画面例アウトを調整するサンプルです
