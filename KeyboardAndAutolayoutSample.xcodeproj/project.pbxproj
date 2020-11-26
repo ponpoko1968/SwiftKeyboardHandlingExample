@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A699B6D9256F9F7300E23F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699B6D8256F9F7300E23F44 /* AppDelegate.swift */; };
-		A699B6DB256F9F7300E23F44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699B6DA256F9F7300E23F44 /* SceneDelegate.swift */; };
-		A699B6DD256F9F7300E23F44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699B6DC256F9F7300E23F44 /* ViewController.swift */; };
 		A699B6E0256F9F7300E23F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A699B6DE256F9F7300E23F44 /* Main.storyboard */; };
 		A699B6E2256F9F7600E23F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A699B6E1256F9F7600E23F44 /* Assets.xcassets */; };
 		A699B6E5256F9F7600E23F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A699B6E3256F9F7600E23F44 /* LaunchScreen.storyboard */; };
+		A699B6ED256F9FF400E23F44 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699B6EC256F9FF400E23F44 /* MenuTableViewController.swift */; };
+		A699B6EF256FA11200E23F44 /* TextFieldSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699B6EE256FA11200E23F44 /* TextFieldSampleViewController.swift */; };
+		A699B6F1256FAF2100E23F44 /* TextViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A699B6F0256FAF2100E23F44 /* TextViewSampleViewController.swift */; };
+		A699B6F3256FB11D00E23F44 /* CloseKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A699B6F2256FB11D00E23F44 /* CloseKeyboardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A699B6D5256F9F7300E23F44 /* KeyboardAndAutolayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardAndAutolayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A699B6D8256F9F7300E23F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A699B6DA256F9F7300E23F44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A699B6DC256F9F7300E23F44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A699B6DF256F9F7300E23F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A699B6E1256F9F7600E23F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A699B6E4256F9F7600E23F44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A699B6E6256F9F7600E23F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A699B6EC256F9FF400E23F44 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		A699B6EE256FA11200E23F44 /* TextFieldSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSampleViewController.swift; sourceTree = "<group>"; };
+		A699B6F0256FAF2100E23F44 /* TextViewSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewSampleViewController.swift; sourceTree = "<group>"; };
+		A699B6F2256FB11D00E23F44 /* CloseKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CloseKeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				A699B6D8256F9F7300E23F44 /* AppDelegate.swift */,
-				A699B6DA256F9F7300E23F44 /* SceneDelegate.swift */,
-				A699B6DC256F9F7300E23F44 /* ViewController.swift */,
 				A699B6DE256F9F7300E23F44 /* Main.storyboard */,
 				A699B6E1256F9F7600E23F44 /* Assets.xcassets */,
 				A699B6E3256F9F7600E23F44 /* LaunchScreen.storyboard */,
 				A699B6E6256F9F7600E23F44 /* Info.plist */,
+				A699B6EC256F9FF400E23F44 /* MenuTableViewController.swift */,
+				A699B6EE256FA11200E23F44 /* TextFieldSampleViewController.swift */,
+				A699B6F0256FAF2100E23F44 /* TextViewSampleViewController.swift */,
+				A699B6F2256FB11D00E23F44 /* CloseKeyboardView.xib */,
 			);
 			path = KeyboardAndAutolayoutSample;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A699B6F3256FB11D00E23F44 /* CloseKeyboardView.xib in Resources */,
 				A699B6E5256F9F7600E23F44 /* LaunchScreen.storyboard in Resources */,
 				A699B6E2256F9F7600E23F44 /* Assets.xcassets in Resources */,
 				A699B6E0256F9F7300E23F44 /* Main.storyboard in Resources */,
@@ -138,9 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A699B6DD256F9F7300E23F44 /* ViewController.swift in Sources */,
 				A699B6D9256F9F7300E23F44 /* AppDelegate.swift in Sources */,
-				A699B6DB256F9F7300E23F44 /* SceneDelegate.swift in Sources */,
+				A699B6ED256F9FF400E23F44 /* MenuTableViewController.swift in Sources */,
+				A699B6EF256FA11200E23F44 /* TextFieldSampleViewController.swift in Sources */,
+				A699B6F1256FAF2100E23F44 /* TextViewSampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
