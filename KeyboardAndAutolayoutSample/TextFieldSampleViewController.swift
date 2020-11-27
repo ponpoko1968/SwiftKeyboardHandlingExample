@@ -13,11 +13,13 @@ class TextFieldSampleViewController: UIViewController {
     @IBOutlet var textFieldBottomMargin: NSLayoutConstraint!
     @IBOutlet var tapGestureToEndEditing: UITapGestureRecognizer!
 
+    @IBOutlet weak var viewToBeHidden: UIView!
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         textFieldBottomMargin.constant = defaultTextFieldBottomMargin
         tapGestureToEndEditing.addTarget(self, action: #selector(hideKeyboard))
+        textField.delegate = self
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -38,6 +40,7 @@ class TextFieldSampleViewController: UIViewController {
             let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double else {
             return
         }
+        viewToBeHidden.isHidden = true
         let keyboardSize = keyboardInfo.cgRectValue.size
         UIView.animate(withDuration: duration,
                        animations: {
@@ -56,6 +59,7 @@ class TextFieldSampleViewController: UIViewController {
             let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double else {
             return
         }
+        viewToBeHidden.isHidden = false
         UIView.animate(withDuration: duration,
                        animations: {
                         self.textFieldBottomMargin.constant = self.defaultTextFieldBottomMargin
@@ -75,9 +79,14 @@ class TextFieldSampleViewController: UIViewController {
         view.layoutIfNeeded()
     }
 
-
-
     @objc private func hideKeyboard(){
         textField.resignFirstResponder()
+    }
+}
+
+extension TextFieldSampleViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
 }

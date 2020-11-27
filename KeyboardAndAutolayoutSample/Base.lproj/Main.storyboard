@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZkN-fo-hVQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZkN-fo-hVQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bYH-c1-3go">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Section-1" id="r1v-je-jfO">
                                 <cells>
@@ -82,21 +84,21 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5MZ-Rf-M3d">
                                 <rect key="frame" x="20" y="115" width="374" height="747"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cKR-2u-URO"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="5MZ-Rf-M3d" firstAttribute="leading" secondItem="cKR-2u-URO" secondAttribute="leading" constant="20" id="9cg-Ha-76q"/>
                             <constraint firstItem="cKR-2u-URO" firstAttribute="trailing" secondItem="5MZ-Rf-M3d" secondAttribute="trailing" constant="20" id="FVO-v8-yXt"/>
                             <constraint firstItem="cKR-2u-URO" firstAttribute="bottom" secondItem="5MZ-Rf-M3d" secondAttribute="bottom" id="hCg-TP-Oog"/>
                             <constraint firstItem="5MZ-Rf-M3d" firstAttribute="top" secondItem="cKR-2u-URO" secondAttribute="top" constant="27" id="t6r-9L-jx1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cKR-2u-URO"/>
                     </view>
                     <navigationItem key="navigationItem" id="KPY-xn-XtA"/>
                     <connections>
@@ -106,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TmA-Yj-5sB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666.66666666666674" y="347.54464285714283"/>
+            <point key="canvasLocation" x="1080" y="855"/>
         </scene>
         <!--Text Field Sample View Controller-->
         <scene sceneID="fpz-CJ-qud">
@@ -116,34 +118,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タップして入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-zL-Sl1">
-                                <rect key="frame" x="44" y="604" width="326" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tT6-dG-AJa">
+                                <rect key="frame" x="41.5" y="132" width="331" height="506"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIx-xS-4up">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="290"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQo-dB-OYf">
+                                        <rect key="frame" x="0.0" y="290" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="TB4-df-fzt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmo-Cv-RCD">
+                                        <rect key="frame" x="0.0" y="334" width="331" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Yi9-qc-bnD"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タップして入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-zL-Sl1">
+                                        <rect key="frame" x="0.0" y="462" width="331" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="bfH-2V-VT3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zZC-ZB-6aP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="cbJ-zL-Sl1" firstAttribute="centerX" secondItem="zZC-ZB-6aP" secondAttribute="centerX" id="4Yx-ak-FdT"/>
-                            <constraint firstItem="cbJ-zL-Sl1" firstAttribute="leading" secondItem="zZC-ZB-6aP" secondAttribute="leading" constant="44" id="HCN-Ic-4rk"/>
-                            <constraint firstItem="zZC-ZB-6aP" firstAttribute="bottom" secondItem="cbJ-zL-Sl1" secondAttribute="bottom" constant="224" id="HSB-ZU-Heh"/>
-                            <constraint firstItem="zZC-ZB-6aP" firstAttribute="trailing" secondItem="cbJ-zL-Sl1" secondAttribute="trailing" constant="44" id="sO8-YQ-IBJ"/>
+                            <constraint firstItem="tT6-dG-AJa" firstAttribute="width" secondItem="Uch-4K-hRR" secondAttribute="width" multiplier="0.8" id="1ww-bc-9bX"/>
+                            <constraint firstItem="zZC-ZB-6aP" firstAttribute="bottom" secondItem="tT6-dG-AJa" secondAttribute="bottom" constant="224" id="9hg-Ef-xNy"/>
+                            <constraint firstItem="tT6-dG-AJa" firstAttribute="centerX" secondItem="zZC-ZB-6aP" secondAttribute="centerX" id="AOT-UD-fB1"/>
+                            <constraint firstItem="tT6-dG-AJa" firstAttribute="top" secondItem="zZC-ZB-6aP" secondAttribute="top" constant="44" id="SFS-g4-ZQ2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zZC-ZB-6aP"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="jHg-14-L7Y" appends="YES" id="8w5-02-Bxk"/>
+                            <outletCollection property="gestureRecognizers" destination="pa0-bk-y2i" appends="YES" id="KW1-RM-pb8"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="kB4-eE-uYv"/>
                     <connections>
-                        <outlet property="tapGestureToEndEditing" destination="jHg-14-L7Y" id="bpU-LQ-3Xp"/>
+                        <outlet property="tapGestureToEndEditing" destination="pa0-bk-y2i" id="8JL-jT-hlO"/>
                         <outlet property="textField" destination="cbJ-zL-Sl1" id="JWR-Er-a31"/>
-                        <outlet property="textFieldBottomMargin" destination="HSB-ZU-Heh" id="WVI-AK-iUh"/>
+                        <outlet property="textFieldBottomMargin" destination="9hg-Ef-xNy" id="uTA-OT-4PZ"/>
+                        <outlet property="viewToBeHidden" destination="rQo-dB-OYf" id="Mxm-NU-4Cs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndK-fm-zS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="jHg-14-L7Y"/>
+                <tapGestureRecognizer id="pa0-bk-y2i"/>
             </objects>
             <point key="canvasLocation" x="1080" y="177"/>
         </scene>
@@ -164,4 +193,21 @@
             <point key="canvasLocation" x="-772" y="178"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
